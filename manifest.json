@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+    "name": "p5 buddy",
+    "version": "0.002",
+    
+    "content_scripts": [
+        {
+            "matches": [
+                "http://editor.p5js.org/*",
+                "https://editor.p5js.org/*"
+            ],
+            
+            "js": [
+                "content.js"
+            ],
+
+            "css": [
+                "style.css"
+            ]
+        }
+    ],
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "browser_action": {
+        "default_icon": "buddy.png"
+    },
+
+    "commands": {
+        "toggleOnOff": {
+            "suggested_key": {
+                "default": "Alt+Z"
+            },
+            "description": "Toggles buddy window"
+        },
+        "toggleLarge": {
+            "suggested_key": {
+                "default": "Alt+S"
+            },
+            "description": "Toggles buddy window size"
+        }
+    },
+
+    "permissions": [
+        "storage"
+    ]
+}
