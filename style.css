@@ -1,9 +1,9 @@
 #buddy {
     position: fixed;
-    top: 60%;
-    left: 101%;
-    width: 19%;   
-    height: 39%;
+    top: 0%;
+    left: 100%;
+    width: 20%;   
+    height: 40%;
     background-color: #D0D0D0;
     outline: 1px solid black;
 
@@ -11,9 +11,10 @@
     transition-duration: 1s;
 }
 
-#buddyVid {
-    width: 100%; 
-    height: 50%;
+.show {
+    left: 80%;
+}
 
-    transition: height 1s;
+.down {
+    top: 60%;
 }

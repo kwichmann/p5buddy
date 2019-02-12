@@ -5,18 +5,9 @@
     
     "content_scripts": [
         {
-            "matches": [
-                "http://editor.p5js.org/*",
-                "https://editor.p5js.org/*"
-            ],
-            
-            "js": [
-                "content.js"
-            ],
-
-            "css": [
-                "style.css"
-            ]
+            "matches": ["http://editor.p5js.org/*", "https://editor.p5js.org/*"],         
+            "js": ["content.js"],
+            "css": ["style.css"]
         }
     ],
 
@@ -27,25 +18,30 @@
     },
 
     "browser_action": {
-        "default_icon": "buddy.png"
+        "default_icon": "buddy.png",
+        "default_title": "p5buddy"
     },
 
     "commands": {
-        "toggleOnOff": {
+        "toggleShow": {
             "suggested_key": {
                 "default": "Alt+Z"
             },
-            "description": "Toggles buddy window"
+            "description": "Toggles buddy window visibility"
         },
-        "toggleLarge": {
+        "togglePosition": {
             "suggested_key": {
-                "default": "Alt+S"
+                "default": "Alt+X"
             },
-            "description": "Toggles buddy window size"
+            "description": "Toggles buddy window placement"
         }
     },
 
     "permissions": [
         "storage"
+    ],
+
+    "web_accessible_resources": [
+        "buddy.html"
     ]
 }

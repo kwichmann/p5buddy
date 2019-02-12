@@ -3,7 +3,7 @@ console.log("Background running");
 // Listen for icon clicks
 chrome.browserAction.onClicked.addListener(tab => {
     const msg = {
-        "action": "toggleOnOff"
+        "action": "toggleShow"
     }
     chrome.tabs.sendMessage(tab.id, msg);
 });
