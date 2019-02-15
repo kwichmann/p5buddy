@@ -2,11 +2,11 @@
 const buddy = document.createElement('div');
 document.body.appendChild(buddy);
 buddy.id = 'buddy';
-buddy.innerHTML = '<h1>Hallo</h1>';
 
-// const buddyFrame = document.createElement('iframe');
-// buddy.appendChild(buddyFrame);
-// buddyFrame.src = chrome.runtime.getURL('buddy.html');
+const buddyFrame = document.createElement('iframe');
+buddy.appendChild(buddyFrame);
+buddyFrame.src = chrome.runtime.getURL('buddy.html');
+buddyFrame.id = 'buddyFrame';
 
 // Storage
 const storage = chrome.storage.sync;

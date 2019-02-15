@@ -6,7 +6,7 @@
     "content_scripts": [
         {
             "matches": ["http://editor.p5js.org/*", "https://editor.p5js.org/*"],         
-            "js": ["content.js"],
+            "js": ["content.js", "buddy.js"],
             "css": ["style.css"]
         }
     ],
@@ -43,5 +43,8 @@
 
     "web_accessible_resources": [
         "buddy.html"
-    ]
+    ],
+
+    "content_security_policy":
+        "script-src 'self'; object-src 'self'"
 }
