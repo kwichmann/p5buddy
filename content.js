@@ -1,32 +1,32 @@
-// const tag = document.createElement('script');
-// tag.src = "./iframe_api.js";
-// const firstScriptTag = document.getElementsByTagName('script')[0];
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 // Set up buddy page as div
 const buddy = document.createElement('div');
 document.body.appendChild(buddy);
 buddy.id = 'buddy';
 
-buddy.innerHTML = "<div class='box'><div id='player'><iframe id='video'></iframe></div><div id='info'></div></div>";
+// Insert HTML in buddy
+fetch(chrome.extension.getURL('buddy.html'))
+  .then(response => response.text())
+  .then((data) => {
+    buddy.innerHTML = data;
 
-const player = new Plyr('#player');
+  const player = new Plyr('#player');
 
-const video = document.getElementById('video');
-video.src = "https://www.youtube.com/embed/Jm4HgJbUmlw?origin=https://plyr.io&amp;enablejsapi=1";
-video["data-plyr-config"] = '{ "title": "This is an example video", "volume": 1, "debug": true, "ratio": "3:4" }'
+  const video = document.getElementById('video');
+  video.src = "https://www.youtube.com/embed/Jm4HgJbUmlw?origin=https://plyr.io&amp;enablejsapi=1";
+  video["data-plyr-config"] = '{ "title": "This is an example video", "volume": 1, "debug": true, "ratio": "3:4" }'
+});
 
 const info = document.getElementById('info');
-info.innerHTML = "<div id='code'></div><div id='comment'></div><div id='link'></div>"
+// info.innerHTML = "<div id='code'></div><div id='comment'></div><div id='link'></div>"
 
 const codeDiv = document.getElementById('code');
-codeDiv.innerHTML = "<h5>Code</h5><textarea readonly>";
+// codeDiv.innerHTML = "<h5>Code</h5><textarea readonly>";
 
 const commentDiv = document.getElementById('comment');
-commentDiv.innerHTML = "<h5>Comment</h5><p>Test</p>";
+// commentDiv.innerHTML = "<h5>Comment</h5><p>Test</p>";
 
 const linkDiv = document.getElementById('link');
-linkDiv.innerHTML = "<h5>Link</h5><a href='#'>Test</a>";
+// linkDiv.innerHTML = "<h5>Link</h5><a href='#'>Test</a>";
 
 // const buddyFrame = document.createElement('iframe');
 // buddy.appendChild(buddyFrame);
