@@ -3,8 +3,6 @@ tag.src = "iframe_api.js";
 const firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// document.getElementsByTagName('h3')[0].innerHTML = window.location.href;
-
 let player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {

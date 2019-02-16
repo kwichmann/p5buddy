@@ -1,25 +1,64 @@
 #buddy {
-    position: fixed;
-    top: 0%;
-    left: 101%;
-    width: 50%;   
-    height: 30%;
-    background-color: #E0E0E0;
-    outline: 1px solid black;
+  position: fixed;
+  top: 1%;
+  left: 101%;
+  width: 50%;   
+  height: 30%;
+  background-color: #E0E0E0;
+  outline: 1px solid black;
 
-    transition-property: top, left, width, height;
-    transition-duration: 0.5s;
+  transition-property: top, left, width, height;
+  transition-duration: 0.5s;
 }
 
 .show {
-    left: 49% !important;
+  left: 49% !important;
 }
 
 .down {
-    top: 69% !important;
+  top: 69% !important;
 }
 
-#buddyFrame {
-    width: 100%;
-    height: 100%;
+#video {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+  
+#player {
+  flex: 53%;
+  width: 100%;
+  height: 100%;
+}
+  
+#info {
+  flex: 47%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+h5 {
+  margin: 0px;
+}
+
+#code {
+  flex: 40%;
+}
+
+#code textarea {
+  width: 100%;
+}
+
+#comment {
+  flex: 40%;  
+}
+
+#link {
+  flex: 20%;
 }

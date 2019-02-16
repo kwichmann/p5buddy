@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
     "name": "p5 buddy",
-    "version": "0.002",
+    "version": "0.003",
     
     "content_scripts": [
         {
             "matches": ["http://editor.p5js.org/*", "https://editor.p5js.org/*"],         
-            "js": ["content.js", "buddy.js"],
+            "js": ["plyr.min.js", "content.js"],
             "css": ["style.css"]
         }
     ],
@@ -42,7 +42,8 @@
     ],
 
     "web_accessible_resources": [
-        "buddy.html"
+        "iframe_api.js",
+        "widget_api.js"
     ],
 
     "content_security_policy":
