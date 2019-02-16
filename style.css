@@ -3,7 +3,7 @@
   top: 1%;
   left: 101%;
   width: 50%;   
-  height: 30%;
+  height: 25%;
   background-color: #E0E0E0;
   outline: 1px solid black;
 
@@ -16,31 +16,33 @@
 }
 
 .down {
-  top: 69% !important;
+  top: 74% !important;
 }
 
-#video {
-  width: 100%;
+.container {
   height: 100%;
+  width: 100%;
 }
 
 .box {
   display: flex;
-  width: 100%;
-  height: 100%;
 }
-  
-#player {
-  flex: 53%;
-  width: 100%;
-  height: 100%;
-}
-  
-#info {
-  flex: 47%;
-  margin: 5px;
+
+.column {
+  flex: 50%;
   display: flex;
   flex-direction: column;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+  
+#video {
+  width: 100%;
+  height: 100%;
 }
 
 h5 {
@@ -49,6 +51,12 @@ h5 {
 
 #code {
   flex: 40%;
+}
+
+#clipboard {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
 }
 
 #code textarea {

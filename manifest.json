@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "p5 buddy",
-    "version": "0.004",
+    "version": "0.005",
     
     "content_scripts": [
         {
@@ -42,7 +42,8 @@
     ],
 
     "web_accessible_resources": [
-        "buddy.html"
+        "buddy.html",
+        "clipboard.png"
     ],
 
     "content_security_policy":

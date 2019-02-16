@@ -9,11 +9,14 @@ fetch(chrome.extension.getURL('buddy.html'))
   .then((data) => {
     buddy.innerHTML = data;
 
-  const player = new Plyr('#player');
+    const player = new Plyr('#player');
 
-  const video = document.getElementById('video');
-  video.src = "https://www.youtube.com/embed/Jm4HgJbUmlw?origin=https://plyr.io&amp;enablejsapi=1";
-  video["data-plyr-config"] = '{ "title": "This is an example video", "volume": 1, "debug": true, "ratio": "3:4" }'
+    const video = document.getElementById('video');
+    video.src = "https://www.youtube.com/embed/Jm4HgJbUmlw?origin=https://plyr.io&amp;enablejsapi=1";
+    video["data-plyr-config"] = '{ "title": "This is an example video", "volume": 1, "debug": true, "ratio": "3:4" }';
+
+    const clipboard = document.getElementById('clipboard');
+    clipboard.src = chrome.extension.getURL('clipboard.png');
 });
 
 const info = document.getElementById('info');
