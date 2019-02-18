@@ -7,7 +7,7 @@
         {
             "matches": ["http://editor.p5js.org/*", "https://editor.p5js.org/*"],         
             "js": ["plyr.min.js", "content.js"],
-            "css": ["style.css"]
+            "css": ["plyr.css", "style.css"]
         }
     ],
 
@@ -38,7 +38,8 @@
     },
 
     "permissions": [
-        "storage"
+        "storage",
+        "http://youtube.com/"
     ],
 
     "web_accessible_resources": [

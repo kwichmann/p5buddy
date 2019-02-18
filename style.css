@@ -34,23 +34,24 @@
   flex-direction: column;
 }
 
-#right {
-  display: flex;
-  flex-direction: column;
+#codeBox {
+  flex: 50%;
+}
+
+#info {
+  margin: 5px;
+}
+
+.right {
   text-align: right;
 }
   
 #video {
   width: 100%;
-  height: 100%;
 }
 
 h5 {
   margin: 0px;
-}
-
-#code {
-  flex: 40%;
 }
 
 #clipboard {

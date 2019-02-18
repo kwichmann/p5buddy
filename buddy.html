@@ -1,33 +1,38 @@
-
-  <div class="box container">
-    <div id='player' class="column">
-      <iframe id='video'></iframe>
-    </div>
-    <div id="info" class="column">
-      <div id='code'>
-        <div class="box" id="codeBox">
-          <div>
-            <h5>Code</h5>
-          </div>
-          <div>
-            <img id ="clipboard">
-          </div>
-          <div class="column" id="right">
-            <h5>Full</h5>
-          </div>
-        </div> 
-      <textarea readonly></textarea>
-      </div>
-      
-      <div id='comment'>
-        <h5>Comment</h5>
-        <p>Test</p>
-      </div>
-
-      <div id='link'>
-        <h5>Link</h5>
-        <a href='#'>Test</a>
-      </div>
+<div class="box container">
+  <div id="video" class="column">
+    <div id="player" data-plyr-provider="youtube" class="column">
+        <iframe
+        src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+        allowfullscreen
+        allowtransparency
+        allow="autoplay"
+    ></iframe>
     </div>
   </div>
+  <div id="info" class="column">
+    <div id='code'>
+      <div class="box" id="codeBox">
+        <div>
+          <h5>Code</h5>
+        </div>
+        <div>
+          <img id="clipboard">
+        </div>
+        <div class="column right">
+          <h5>Full</h5>
+        </div>
+      </div>
+      <textarea readonly></textarea>
+    </div>
 
+    <div id='comment'>
+      <h5>Comment</h5>
+      <p>Test</p>
+    </div>
+
+    <div id='link'>
+      <h5>Link</h5>
+      <a href='#'>Test</a>
+    </div>
+  </div>
+</div>
